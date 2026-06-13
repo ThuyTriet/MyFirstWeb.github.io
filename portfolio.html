@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Portfolio</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+font-family:Arial;
+
+background:#f5f7fb;
+
+}
+
+/* MENU */
+
+nav{
+
+background:white;
+
+padding:20px;
+
+display:flex;
+
+justify-content:space-between;
+
+}
+
+.logo{
+
+font-size:28px;
+
+font-weight:bold;
+
+color:pink;
+
+}
+
+.menu a{
+
+text-decoration:none;
+
+margin-left:20px;
+
+color:#444;
+
+}
+
+.menu a:hover{
+
+color:#2563eb;
+
+}
+
+/* PHẦN GIỚI THIỆU */
+
+.hero{
+
+height:80vh;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+}
+
+.card{
+
+background:white;
+
+width:700px;
+
+padding:50px;
+
+border-radius:20px;
+
+text-align:center;
+
+box-shadow:0 10px 40px rgba(0,0,0,0.1);
+
+}
+
+.avatar{
+
+width:150px;
+
+border-radius:50%;
+
+margin-bottom:20px;
+
+}
+
+h1{
+
+margin-bottom:15px;
+
+}
+
+p{
+
+color:#666;
+
+line-height:1.8;
+
+}
+
+input{
+
+padding:12px;
+
+width:250px;
+
+border-radius:10px;
+
+border:1px solid #ddd;
+
+font-size:18px;
+
+}
+button{
+
+margin-top:30px;
+
+padding:14px 30px;
+
+background:pink;
+
+color:white;
+
+border:none;
+
+border-radius:12px;
+
+cursor:pointer;
+
+}
+
+button:hover{
+
+transform:scale(1.05);
+
+}
+
+/* chuyển động */
+
+.card:hover{
+
+transform:translateY(-10px);
+
+transition:0.3s;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+
+Denki Hana
+
+</div>
+
+<div class="menu">
+
+<a href="">Trang chủ</a>
+
+<a href="">Dự án</a>
+
+<a href="">Liên hệ</a>
+
+</div>
+
+</nav>
+
+<section class="hero">
+
+<div class="card">
+
+<img
+class="avatar"
+src="https://picsum.photos/300">
+
+<h1 id="title"> Xin chào 👋 </h1>
+
+<input
+id="name"
+placeholder="Nhập tên">
+
+<br><br>
+
+<button onclick="hello()">
+
+Gửi
+
+</button>
+
+</div>
+
+</section>
+<script>
+
+function hello(){
+
+let name =
+
+document
+.getElementById("name")
+.value
+
+document
+.getElementById("title")
+.innerHTML=
+
+"Xin chào " + name + " 👋"
+
+}
+
+
+</script>
+</body>
+
+</html>
